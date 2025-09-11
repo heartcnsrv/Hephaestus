@@ -3,12 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Static Multipage (Scroll)</title>
+  <title>Gender Equality Website</title>
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- ===== HEADER ===== -->
+  <!-- ================= HEADER ================= -->
   <header class="hero">
     <div class="top-bar">
       <div class="logo">LOGO</div>
@@ -27,7 +32,7 @@
     </div>
   </header>
 
-  <!-- ===== OVERVIEW ===== -->
+  <!-- ================= OVERVIEW ================= -->
   <section id="overview" class="section">
     <h2>Overview</h2>
     <p>
@@ -35,15 +40,15 @@
       Aenean quis tincidunt nibh, eget dapibus massa. 
     </p>
     <div class="overview-layout">
-      <img src="assets/images/sdg5.png" alt="Placeholder image">
+      <img src="assets/images/sdg5.png" alt="SDG 5">
       <div class="charts">
-        <img src="assets/images/chart1.png" alt="Placeholder chart 1">
-        <img src="assets/images/chart2.png" alt="Placeholder chart 2">
+        <img src="assets/images/chart1.png" alt="Chart 1">
+        <img src="assets/images/chart2.png" alt="Chart 2">
       </div>
     </div>
   </section>
 
-  <!-- ===== KEY ISSUES ===== -->
+  <!-- ================= KEY ISSUES ================= -->
   <section id="issues" class="section">
     <h2>Key Issues</h2>
     <div class="issues-grid">
@@ -58,48 +63,131 @@
     </div>
   </section>
 
-  <!-- ===== INITIATIVES ===== -->
-  <section id="initiatives" class="section">
-    <h2>Initiatives</h2>
-    <div class="initiative">
-      <h3>Lorem Ipsum Org</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <!-- ================= ACHIEVEMENTS & SUCCESS STORIES ================= -->
+  <section id="achievements" class="achievements">
+    <h2>ACHIEVEMENTS & SUCCESS STORIES</h2>
+
+    <!-- ===== Video Section ===== -->
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/t0-DNjjkq7M" allowfullscreen></iframe>
     </div>
-    <div class="initiative">
-      <h3>Dolor Sit Amet Group</h3>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+    <!-- ===== Stories Section ===== -->
+    <!-- Story 1 (Background image) -->
+    <div class="story story-bg">
+      <div class="story-content">
+        <h3>SELF LOATHING, DEPRESSION, AND EMBRASSING LOVE - SEAN'S COMING OUT EXPERIENCE</h3>
+        <div class="story-columns">
+          <div class="story-left">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed urna ac massa commodo tincidunt.</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+          </div>
+          <div class="story-right">
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.</p>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <div class="story-divider"></div>
+
+    <!-- Story 2 (White background) -->
+    <div class="story story-white">
+      <div class="story-content">
+        <h3>Another inspiring journey</h3>
+        <div class="story-columns">
+          <div class="story-left">
+            <p>Integer malesuada, augue a dictum volutpat, mi dolor fermentum erat, nec suscipit lacus nulla nec arcu.</p>
+          </div>
+          <div class="story-right">
+            <p>Nam sollicitudin sapien nec augue tristique, vel fermentum lorem sodales. Suspendisse vitae velit nec purus.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="story-divider"></div>
+
   </section>
 
-  <!-- ===== RIGHTS ===== -->
-  <section id="rights" class="section">
-    <h2>Rights</h2>
-    <table>
+  <!-- ================= RIGHTS & OPPORTUNITIES ================= -->
+  <section class="rights-opportunities">
+    <h2>RIGHTS & OPPORTUNITIES</h2>
+
+    <!-- ===== Rights Table ===== -->
+    <table class="rights-table">
       <thead>
         <tr>
-          <th>Lorem</th>
-          <th>Ipsum</th>
-          <th>Dolor</th>
+          <th>Topic</th>
+          <th>Key Points</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>Sit amet</td>
-          <td>Consectetur</td>
-          <td>Adipiscing elit</td>
+        <tr class="women">
+          <td>
+            <a href="https://oxfam.org.ph/story-grant-inequality-in-the-philippines/" target="_blank">
+              Women’s Rights in the Philippines
+            </a>
+          </td>
+          <td>
+            Women have the right to education, equal pay, and protection from violence. However, enforcement of laws is weak, 
+            and social norms still limit women’s roles. More support is needed in farming, business, leadership, 
+            and the passage of stronger anti-discrimination laws.
+          </td>
         </tr>
-        <tr>
-          <td>Sed do</td>
-          <td>Eiusmod tempor</td>
-          <td>Incididunt ut labore</td>
+        <tr class="lgbtq">
+          <td>
+            <a href="https://time.com/6290762/philippines-pride-lgbt-discrimination-sogie-equality-bill/" target="_blank">
+              LGBTQ+ Discrimination
+            </a>
+          </td>
+          <td>
+            Despite being seen as LGBT-friendly, the Philippines lacks national legal protection. LGBTQ+ Filipinos remain vulnerable 
+            to discrimination in work, school, and daily life.
+          </td>
+        </tr>
+        <tr class="sogie">
+          <td>
+            <a href="https://news.tv5.com.ph/national/read/group-renews-call-for-passage-of-decades-delayed-sogie-bill" target="_blank">
+              SOGIE Equality Bill
+            </a>
+          </td>
+          <td>
+            The bill seeks to ban discrimination based on sexual orientation, gender identity, expression, and sex characteristics. 
+            It has stalled in Congress for over 20 years despite strong advocacy from groups like Bahaghari and CHR.
+          </td>
+        </tr>
+        <tr class="advocacy">
+          <td>
+            <a href="https://www.them.us/story/first-filipina-boxing-winner-olympics-dedicates-medal-lgbtq-community-nesthy-petecio" target="_blank">
+              LGBTQ+ Advocacy Movements
+            </a>
+          </td>
+          <td>
+            Groups like Bahaghari organize Pride marches, support victims of red-tagging and violence, 
+            and campaign for the passage of the SOGIE Bill. Events like “Stonewall Philippines” highlight ongoing struggles for equality.
+          </td>
         </tr>
       </tbody>
     </table>
+
+    <!-- ===== Rights Note ===== -->
+    <div class="rights-note">
+      <p>
+        Beyond rights and opportunities, gender expectations continue to harm both women and men. 
+        Patriarchal norms place men above women, leading to pay inequities, violence, and discriminatory policies. 
+        These norms also pressure men and boys to conform to restrictive ideas of masculinity, often causing emotional stress, 
+        poor health outcomes, and higher risks of suicide. Breaking these harmful expectations benefits everyone, 
+        creating a society where people can freely express themselves without fear or limitation.
+      </p>
+    </div>
+
   </section>
 
-  <!-- ===== FOOTER ===== -->
+  <!-- ================= FOOTER ================= -->
   <footer>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p>“Achieving gender equality requires the engagement of women and men, girls and boys.” – Ban Ki-moon</p>
   </footer>
 
 </body>
