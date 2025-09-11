@@ -1,0 +1,57 @@
+/* ===== RESET ===== */
+/* remove default margins and paddings from all elements */
+/* use border-box so padding does not break layout */
+/* add smooth scroll for navigation links */
+
+ 
+/* ===== BODY ===== */
+/* set default font, background color, and text color */
+/* give line height for readability */
+
+ 
+/* ===== HEADER ===== */
+/* style the top hero section */
+/* put background image or color */
+/* make navigation horizontal on desktop */
+/* align logo to the left and nav to the right */
+
+ 
+/* ===== SECTIONS ===== */
+/* give each section padding and margin */
+/* center the titles */
+/* max width so text does not go too wide */
+
+ 
+/* ===== OVERVIEW SECTION ===== */
+/* layout the image and charts side by side on desktop */
+/* stack them vertically on mobile */
+
+ 
+/* ===== ISSUES SECTION ===== */
+/* use grid to make 4 columns on desktop */
+/* use single column on mobile */
+/* each issue box has background color and padding */
+
+ 
+/* ===== INITIATIVES SECTION ===== */
+/* give each initiative card a background */
+/* small border or left line for emphasis */
+
+ 
+/* ===== RIGHTS TABLE ===== */
+/* full width table with borders */
+/* style headers different from rows */
+
+ 
+/* ===== FOOTER ===== */
+/* dark background and white text */
+/* center the text */
+
+ 
+/* ===== MEDIA QUERIES ===== */
+/* on max-width 768px (mobile): */
+/* - change background to pastel color */
+/* - stack nav items vertically */
+/* - change grid layout to single column */
+/* - use colorful backgrounds for issue cards */
+/* - make sections into rounded cards */
