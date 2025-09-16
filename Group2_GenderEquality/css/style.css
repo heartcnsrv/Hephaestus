@@ -1,351 +1,507 @@
-/* ================================================== */
-/* ========== GLOBAL STYLES ========== */
-/* ================================================== */
-body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-}
-
-/* ================================================== */
-/* ========== ACHIEVEMENTS SECTION ========== */
-/* ================================================== */
-.achievements {
-  padding: 40px 0;
-  background-color: #fff;
-}
-
-.achievements h2 {
-  text-align: center;
-  font-size: 3em;
-  font-weight: 700;
-  margin-bottom: 40px;
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.15);
-}
-
-/* === Video Container === */
-.video-container {
-  width: 100vw;
+/* ================= GENERAL STYLES ================= */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #fafafa;
+}
+
+h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: #111;
+}
+
+section {
+  padding: 60px 10%;
+}
+
+/* ================= NAVIGATION ================= */
+.top-bar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10%;
+  z-index: 1000;
+}
+
+.top-bar .logo img {
+  height: 40px;
+}
+
+.top-bar ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.top-bar a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.top-bar a:hover {
+  color: #f44336;
+}
+
+/* ================= HERO ================= */
+.hero {
+  background: url("assets/images/hero-bg.jpg") no-repeat center center/cover;
+  height: 90vh;
   position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10%;
+}
+
+.hero-text {
+  text-align: center;
+  color: #fff;
+  max-width: 500px;
+}
+
+.hero-text .subtitle {
+  font-style: italic;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero-text .btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #f44336;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background 0.3s;
+}
+
+.hero-text .btn:hover {
+  background: #b71c1c;
+}
+
+/* ================= OVERVIEW ================= */
+.overview-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.overview-text h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.overview-text p {
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.sdg-card {
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.sdg-logo {
+  width: 100%;
+  max-width: 150px;
+  margin: 0 auto 15px auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.sdg-label {
+  font-size: 0.9rem;
+  color: #000;
+  line-height: 1.4;
+}
+
+.overview-bottom p {
+  margin: 0;
+  text-align: justify;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Responsive: Overview */
+@media (max-width: 992px) {
+  .overview-container {
+    grid-template-columns: 1fr;
+  }
+  .overview-card {
+    margin-top: 20px;
+  }
+}
+
+/* ================= MEN ================= */
+.men-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.men-image {
+  order: 1;
+}
+
+.men-text {
+  order: 2;
+}
+
+.men-photo img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+.men-caption {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 8px;
+  color: #555;
+}
+
+/* ================= LGBT IN PH ================= */
+.lgbt-container {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.lgbt-photo img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+.lgbt-caption {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.lgbt-text p {
+  text-align: justify;
+  line-height: 1.6;
+  margin-top: 20px;
+}
+
+/* ================= KEY ISSUES ================= */
+.issues-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+  perspective: 1000px; 
+}
+
+.flip-card {
+  background: transparent;
+  width: 100%;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.flip-card-front {
+  background: #111;
+  color: #fff;
+}
+
+.flip-card-back {
+  background: #f44336;
+  color: #fff;
+  transform: rotateY(180deg);
+}
+
+/* ================= INITIATIVES ================= */
+.initiatives {
+  padding: 60px 10%;
+}
+
+.initiatives h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.initiative {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
+.initiative-logo {
+  width: 120px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.initiative-content h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #b00020;
+}
+
+.initiative-content p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.initiative .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #b00020;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background 0.3s;
+}
+
+.initiative .btn:hover {
+  background: #8c001a;
+}
+
+/* Responsive: Initiatives */
+@media (max-width: 768px) {
+  .initiative {
+    flex-direction: column;
+    text-align: center;
+  }
+  .initiative-logo {
+    margin-bottom: 15px;
+  }
+}
+
+/* ================= ACHIEVEMENTS ================= */
+.achievements h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 40px;
 }
 
 .video-container iframe {
-  width: 100vw;
-  height: calc(100vw * 9 / 16);
-  display: block;
-  border: none;
-}
-
-/* === Stories === */
-.story {
-  min-height: 600px;
-  padding: 100px 60px;
-  margin: 40px auto;
-  font-family: 'Glacial Indifference', sans-serif;
-  color: #222;
-  background: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.story-content {
-  max-width: 1100px;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  margin: 0 auto;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+}
+
+.story {
+  padding: 40px;
+  border-radius: 10px;
+  margin: 30px 0;
 }
 
 .story-content h3 {
-  font-family: 'Mont', sans-serif;
-  font-size: 1.8em;
-  color: #8f0000;
-  font-weight: 700;
   margin-bottom: 20px;
-  text-align: left;
-  max-width: 50%;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
 }
 
 .story-columns {
-  display: flex;
-  width: 100%;
-  align-items: stretch;
-  gap: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
 
-.story-left {
-  flex: 0 0 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.story-right {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.story-left p,
-.story-right p {
-  font-family: 'Glacial Indifference', sans-serif;
-  font-size: 1em;
-  color: #222;
-  margin-bottom: 1em;
-}
-
-/* Story backgrounds */
-.story-bg {
-  background: url('../assets/images/achievements-bg.png') center/cover no-repeat;
-  min-height: 650px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.story-white {
-  background: #fff;
-}
-
-/* Decorative divider */
 .story-divider {
-  width: 100%;
-  margin: -180px auto;
-  text-align: center;
+  height: 2px;
+  background: #ddd;
+  margin: 40px 0;
 }
 
-.story-divider::before {
-  content: "";
-  display: inline-block;
-  width: 100%;
-  max-width: 2000px;
-  height: 400px;
-  background: url('../assets/images/achievements-cut.png') center/contain no-repeat;
+.story.paper {
+  background: url("assets/achievements-bg.png") no-repeat center center;
+  background-size: contain;
+  width: 900px;
+  height: 600px;
+  margin: 40px auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* ================================================== */
-/* ========== RIGHTS & OPPORTUNITIES SECTION ========== */
-/* ================================================== */
-.rights-opportunities {
-  padding: 80px 60px;
-  background: #fff;
-  font-family: 'Glacial Indifference', sans-serif;
-  text-align: center;
+.paper-content {
+  width: 80%;
+  height: 80%;
+  overflow-y: auto;
+  padding: 20px;
+  color: #111;
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
-.rights-opportunities h2 {
-  text-align: right;
-  font-size: 3rem;
-  margin-bottom: 40px;
+.paper-content h3 {
+  color: #a11;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
   font-weight: 700;
-  color: #000;
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.15);
 }
 
-/* Table */
-.rights-table {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto 40px auto;
-  border-collapse: collapse;
-  font-size: 1.1rem;
-  background: #fff;
-  border: 2px solid #000;
+/* ================= RIGHTS ================= */
+.rights-opportunities h2 {
   text-align: center;
+  margin-bottom: 30px;
+}
+
+.rights-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+.rights-table th,
+.rights-table td {
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: left;
 }
 
 .rights-table th {
-  background: #737373;
+  background: #111;
   color: #fff;
-  padding: 15px;
-  font-size: 1.2rem;
-  font-family: 'Mont', sans-serif;
-  border: 1px solid #000;
 }
 
-.rights-table td {
-  border: 1px solid #000;
-  padding: 20px;
-  vertical-align: top;
-  font-size: 1.1rem;
-  text-align: center;
+.rights-table tr:nth-child(even) {
+  background: #f9f9f9;
 }
 
-.rights-table td:first-child a {
-  color: #c62828;
-  font-family: 'Mont', sans-serif;
+.rights-table a {
+  color: #f44336;
   font-weight: 600;
   text-decoration: none;
-  font-size: 1.15rem;
-}
-
-.rights-table td:first-child a:hover {
-  text-decoration: underline;
-  color: #000;
-}
-
-.rights-table td:last-child {
-  color: #000;
-  font-family: 'Glacial Indifference', sans-serif;
-  font-size: 1.15rem;
-  line-height: 1.6;
-  text-align: justify;
 }
 
 .rights-note {
-  max-width: 900px;
-  margin: 0 auto;
-  font-size: 1.15rem;
-  line-height: 1.8;
-  color: #333;
-  text-align: justify;
-  font-family: 'Glacial Indifference', sans-serif;
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
 }
 
-/* ================================================== */
-/* ========== MOBILE RESPONSIVE STYLES ========== */
-/* ================================================== */
-@media (max-width: 768px) {
-
-  /* Achievements section */
-  .achievements {
-    background: #fde096;
-    padding: 20px;
-    text-shadow: 20px 20px 60px rgba(0,0,0,0.15);
-    color: #fff;
-    position: relative;
-  }
-
-  /* Wave transition */
-  .achievements::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 150px;
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23b5e48c" fill-opacity="1" d="M0,160L60,192C120,224,240,288,360,288C480,288,600,224,720,197.3C840,171,960,181,1080,186.7C1200,192,1320,192,1380,192L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>') no-repeat bottom;
-  background-size: cover;
-  z-index: 0;
+/* ================= FOOTER ================= */
+footer {
+  background: #880909;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
 }
 
-  .achievements > * {
-    position: relative;
-    z-index: 1;
+/* ================= RESPONSIVE ================= */
+@media (max-width: 992px) {
+  .issues-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
-
-  .achievements h2 {
-    font-size: 2.5rem;
+  .overview-layout {
+    grid-template-columns: 1fr;
   }
-
-  /* Video */
-  .video-container iframe {
-    height: calc(100vw * 9 / 16);
-  }
-
-  /* Stories */
-  .story {
-    background: #fff !important;
-    border: 3px solid #fde096;
-    border-radius: 70px;
-    padding: 30px;
-    margin: 20px auto;
-    text-align: center;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-    min-height: auto;
-  }
-
-  .story-content h3 {
-    text-align: center;
-    font-size: 1.4em;
-    color: #000;
-    max-width: 100%;
-    text-shadow: 1px 1px 4px rgba(0,0,0,0.25);
-  }
-
   .story-columns {
-    flex-direction: column;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+  .top-bar ul {
     gap: 15px;
   }
-
-  .story-bg {
-    display: block !important;
-    background: #fff !important; 
-    min-height: auto;
-  }
-
-  .story-divider {
-    display: none;
-  }
-
-  /* Rights section */
-  .rights-opportunities {
-    background: #b5e48c;
-    padding: 30px 20px;
-    margin-top: -5px;
-  }
-
-  .rights-opportunities h2 {
-    font-size: 2.5rem;
-    text-align: center;
-    color: #fff;
-    text-shadow: 2px 2px 6px rgba(0,0,0,0.15);
-    font-family: 'Poppins', sans-serif;
-  }
-
-  .rights-table {
-    width: 100%;
-    font-size: 1rem;
-  }
-
-  .rights-table th {
-    background: #fff;
-    color: #000;
-    padding: 12px;
-    font-weight: bold;
-  }
-
-  .rights-table td:first-child,
-  .rights-table td:last-child {
+  .initiative {
+    flex-direction: column;
     text-align: center;
   }
+}
 
-  .rights-table tr.women { background: #c8b6ff; }
-  .rights-table tr.lgbtq { background: #e7c6ff; }
-  .rights-table tr.sogie { background: #f3c4fb; }
-  .rights-table tr.advocacy { background: #ffcbf2; }
-
-  .rights-table tr.women td:first-child a,
-  .rights-table tr.lgbtq td:first-child a,
-  .rights-table tr.sogie td:first-child a,
-  .rights-table tr.advocacy td:first-child a {
-    color: #000 !important;
-    font-weight: 700 !important;
-    text-decoration: underline !important;
-    cursor: pointer;
-    transition: color 0.2s ease;
+@media (max-width: 576px) {
+  .issues-grid {
+    grid-template-columns: 1fr;
   }
-
-  .rights-table td:first-child a:hover {
-    color: #8f0000 !important;
+  .top-bar ul {
+    flex-direction: column;
+    gap: 10px;
   }
-
-  .rights-table tr.women td:last-child,
-  .rights-table tr.lgbtq td:last-child,
-  .rights-table tr.sogie td:last-child,
-  .rights-table tr.advocacy td:last-child {
-    font-family: 'Glacial Indifference', sans-serif !important;
-    color: #000 !important;
-    text-align: center;
-  }
-
-  .rights-cards .card {
-    background: linear-gradient(135deg, #c3ecb2, #f9d29d);
-    border-radius: 100px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  .hero-text h1 {
+    font-size: 2rem;
   }
 }
