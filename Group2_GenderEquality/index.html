@@ -4,118 +4,191 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gender Equality Website</title>
-  
-  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- ================= HEADER ================= -->
-  <header class="hero">
-    <div class="top-bar">
-      <div class="logo">LOGO</div>
-      <nav>
-        <ul>
-          <li><a href="#overview">Overview</a></li>
-          <li><a href="#issues">Key Issues</a></li>
-          <li><a href="#initiatives">Initiatives</a></li>
-          <li><a href="#rights">Rights</a></li>
-        </ul>
-      </nav>
+  <!-- ================= NAVIGATION ================= -->
+  <nav class="top-bar">
+    <div class="logo">
+      <img src="assets/images/logo.png" alt="Logo">
     </div>
-    <div class="hero-text">
-      <h1>Lorem Ipsum Title</h1>
-      <p>Lorem ipsum short subtitle</p>
+    <ul>
+      <li><a href="#overview">About</a></li>
+      <li><a href="#initiatives">Initiatives & Support</a></li>
+      <li><a href="#rights">Rights & Opportunities</a></li>
+    </ul>
+  </nav>
+
+  <!-- ================= HERO ================= -->
+  <header class="hero">
+    <div class="hero-overlay">
+      <div class="hero-text right-align">
+        <p class="subtitle">Building a World of Equal Opportunities</p>
+        <h1>Gender Equality</h1>
+        <a href="#overview" class="btn">Learn More</a>
+      </div>
     </div>
   </header>
 
   <!-- ================= OVERVIEW ================= -->
-  <section id="overview" class="section">
-    <h2>Overview</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-      Aenean quis tincidunt nibh, eget dapibus massa. 
-    </p>
-    <div class="overview-layout">
-      <img src="assets/images/sdg5.png" alt="SDG 5">
-      <div class="charts">
-        <img src="assets/images/chart1.png" alt="Chart 1">
-        <img src="assets/images/chart2.png" alt="Chart 2">
+  <section id="overview" class="overview-section">
+    <div class="overview-container">
+      <div class="overview-text">
+        <h2>Overview</h2>
+        <p>
+          Gender equality entails ensuring men, women, and individuals of varied gender identities have the same rights, responsibilities, and chances in all aspects of life. Gender equality is acknowledged as a fundamental human right and a pillar upon which smooth, prosperous, and sustainable communities are formed. The principle entails equality in attending school, health care, decent work, and political as well as economic policy participation. Moreover, it entails that there is a need to bring an end to gender-based discrimination, stereotyping, and violence. Despite progress, inequalities persist: women often face lower wages, underrepresentation in leadership roles, and limited access to healthcare and education in certain regions. Men, on the other hand, may face pressure from rigid gender norms that discourage emotional expression or non-traditional career choices.
+        </p>
+      </div>
+
+      <div class="overview-card">
+        <div class="sdg-card">
+          <img src="assets/sdg5.png" alt="SDG 5 Logo" class="sdg-logo">
+          <p class="sdg-label">
+            <strong>Sustainable Development Goal 5</strong><br>
+            Gender Equality
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="overview-bottom">
+      <p>
+        Cognizing gender equality as a global human right and a stimulus to sustainable global development, this principle is embedded in United Nations Sustainable Development Goal 5, or SDG 5, as a demand for an end to violence and discrimination against women and girls, a demand for equal participation in leadership, and a validation of value in domestic work and care work.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= CHARTS ================= -->
+   <section id="charts" class="chart-section">
+    placeholder daw muna charts dito
+   </section>
+
+  <!-- ================= MEN IN GENDER EQUALITY ================= -->
+  <section id="men" class="men-section">
+    <div class="men-container">
+      <div class="men-text">
+        <h2>Men in Gender Equality</h2>
+        <p>
+          Men play a central role in advancing gender equality, as men reject destructive stereotypes, promote fair opportunities, and firmly oppose discrimination. The advancement of equality is not only about women's rights, but rather about transforming society to emancipate men from obligatory roles dictating how they have to act in preset patterns. If men accept being allies in families, workplaces, and communities, then a safer space for everyone's flourishing is opened. Campaigns such as HeForShe provide an example of men, in supporting justice, respect, and equality, being at the forefront of a fairer world for everyone.
+        </p>
+      </div>
+
+      <div class="men-image">
+        <div class="men-photo">
+          <img src="assets/men.png" alt="Men Photo" class="men-img">
+          <p class="men-caption">Photo Reference</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= LGBT IN PH ================= -->
+  <section id="lgbtph" class="lgbt-section">
+    <div class="lgbt-container">
+      <div class="lgbt-title">
+        <h2>LGBTQ+ in the Philippines</h2>
+      </div>
+
+      <div class="lgbt-photo">
+        <img src="assets/lgbt.png" alt="LGBT Photo" class="lgbt-img">
+        <p class="lgbt-caption">Photo Reference</p>
+      </div>
+
+      <div class="lgbt-text">
+        <p>
+          Philippines' LGBTQ community is still both acknowledged and resisted. While, there is greater openness in Philippine society with Pride events being marked in major cities and LGBTQ personalities becoming mainstream in media, showbiz, and sport. But protection under law is still weak, as the SOGIE Equality Bill languishes in Congress for over two decades despite spirited campaign. That gap exposes most LGBTQ Filipinos to discrimination in educational settings, workplace, health care, and public services.
+        </p>
+        <p>
+          Social and religious pressures, particularly conservative teachings, sustain damaging stereotypes and fuel exclusion, so that for countless individuals, coming out is a challenging and in some cases dangerous activity. It is the struggle of LGBTQ+ Filipinos that illustrates both the immediate necessity of both social and legal reform in achieving real equality. Pride marches, campaigns, and stories of representation continue to build upon the movement's steam. Despite hurdles, it is a ceaseless struggle that holds out good prospects of a time in Philippine society in which people of every identity will be celebrated, protected, and respected.
+        </p>
       </div>
     </div>
   </section>
 
   <!-- ================= KEY ISSUES ================= -->
-  <section id="issues" class="section">
+  <section id="issues" class="issues-section">
     <h2>Key Issues</h2>
     <div class="issues-grid">
-      <div class="issue">Lorem ipsum</div>
-      <div class="issue">Dolor sit amet</div>
-      <div class="issue">Consectetur</div>
-      <div class="issue">Adipiscing elit</div>
-      <div class="issue">Sed do</div>
-      <div class="issue">Eiusmod tempor</div>
-      <div class="issue">Incididunt</div>
-      <div class="issue">Ut labore</div>
+      <!-- 8 Flip Cards -->
+      <div class="flip-card"><div class="flip-card-inner"><div class="flip-card-front">Gender Wage Gap</div><div class="flip-card-back"></div></div></div>
+      <div class="flip-card"><div class="flip-card-inner"><div class="flip-card-front">Reproductive Rights</div><div class="flip-card-back"></div></div></div>
+      <div class="flip-card"><div class="flip-card-inner"><div class="flip-card-front">Violence</div><div class="flip-card-back"></div></div></div>
+      <div class="flip-card"><div class="flip-card-inner"><div class="flip-card-front">Access to Education</div><div class="flip-card-back"></div></div></div>
+      <div class="flip-card"><div class="flip-card-inner"><div class="flip-card-front">Political Representation</div><div class="flip-card-back"></div></div></div>
+      <div class="flip-card"><div class="flip-card-inner"><div class="flip-card-front">Workplace Discrimination</div><div class="flip-card-back"></div></div></div>
+      <div class="flip-card"><div class="flip-card-inner"><div class="flip-card-front">LGBTQ+ Rights</div><div class="flip-card-back"></div></div></div>
+      <div class="flip-card"><div class="flip-card-inner"><div class="flip-card-front">Healthcare Inequality</div><div class="flip-card-back"></div></div></div>
+    </div>
+  </section>
+
+  <!-- ================= INITIATIVES & SUPPORT ================= -->
+  <section id="initiatives" class="initiatives-section">
+    <h2>Initiatives & Support</h2>
+
+    <div class="initiative">
+      <img src="assets/galang.png" alt="Galang Philippines Logo" class="initiative-logo">
+      <div class="initiative-content">
+        <h3>Galang Philippines – Advocacy Group</h3>
+        <p>
+          GALANG PHILIPPINES is a feminist human rights organization that advocates for the rights and well-being for lesbians, bisexuals, and transgenders. They fight for all causes especially for those who are from poor urban communities who are lacking to sustain themselves. Ending discrimination, reducing poverty, and empowering marginalized LGBTQ+ individuals.
+        </p>
+        <a href="https://galangphilippines.org" target="_blank" class="btn">Visit Website</a>
+      </div>
+    </div>
+
+    <div class="initiative">
+      <img src="assets/pcw.png" alt="Philippine Commission on Women Logo" class="initiative-logo">
+      <div class="initiative-content">
+        <h3>Philippine Commission on Women (PCW) – Government Agency</h3>
+        <p>
+          The Philippine Commission on Women works with the government agencies, local government units, and civil society for women’s empowerment, gender equality, and women’s rights. The agency ensures that national laws and commitments, such as the RA No. 9710 (The Magna Carta for Women in the Philippines), are upheld.
+        </p>
+        <a href="https://pcw.gov.ph" target="_blank" class="btn">Visit Website</a>
+      </div>
     </div>
   </section>
 
   <!-- ================= ACHIEVEMENTS & SUCCESS STORIES ================= -->
-  <section id="achievements" class="achievements">
-    <h2>ACHIEVEMENTS & SUCCESS STORIES</h2>
+  <section id="achievements" class="achievements-section">
+    <h2>Achievements & Success Stories</h2>
 
-    <!-- ===== Video Section ===== -->
+    <!-- Video Section 1 -->
     <div class="video-container">
       <iframe src="https://www.youtube.com/embed/t0-DNjjkq7M" allowfullscreen></iframe>
     </div>
 
-    <!-- ===== Stories Section ===== -->
-    <!-- Story 1 (Background image) -->
-    <div class="story story-bg">
-      <div class="story-content">
-        <h3>SELF LOATHING, DEPRESSION, AND EMBRASSING LOVE - SEAN'S COMING OUT EXPERIENCE</h3>
-        <div class="story-columns">
-          <div class="story-left">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed urna ac massa commodo tincidunt.</p>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-          </div>
-          <div class="story-right">
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.</p>
-          </div>
-        </div>
+    <!-- Story 1 -->
+    <div class="story paper">
+      <div class="paper-content">
+        <h3>Self-Loathing, Depression and Embracing Love – Sean’s Coming Out Experience</h3>
+        <p>He video shows Sean describing his coming out journey, a history of self-loathing, depression, and destructive coping in alcohol. Since age 12, he knew he was attracted to boys but denied it, developing an alter personality "Hank" to hide being himself when he drank. This caused irresponsible behavior, a car wreck, and worsening depression, till he bottomed out in isolation. The turning point was when he met Mike, whose friendship assisted Sean in accepting who he was, and he eventually came out to his brother, relatives, peers, and sports team. Their acceptance removed a lot of his stress, and he currently lives freely with Mike. Sean's case illustrates the destructive outcomes of keeping a secret identity, as well as the potential of receiving love, acceptance, and genuine attachment.</p>
       </div>
     </div>
 
     <div class="story-divider"></div>
 
-    <!-- Story 2 (White background) -->
-    <div class="story story-white">
-      <div class="story-content">
-        <h3>Another inspiring journey</h3>
-        <div class="story-columns">
-          <div class="story-left">
-            <p>Integer malesuada, augue a dictum volutpat, mi dolor fermentum erat, nec suscipit lacus nulla nec arcu.</p>
-          </div>
-          <div class="story-right">
-            <p>Nam sollicitudin sapien nec augue tristique, vel fermentum lorem sodales. Suspendisse vitae velit nec purus.</p>
-          </div>
-        </div>
+    <!-- Video Section 2 -->
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/JoL-MnXvK80?si=6HOAc42299Mi30rO" allowfullscreen></iframe>
+    </div>
+
+    <!-- Story 2 -->
+    <div class="story paper">
+      <div class="paper-content">
+        <h3>Coming Out – Troye Sivan</h3>
+        <p>The video is Troye's public coming out, in which he openly discusses with his YouTube viewers that he is gay. He produced it partly because he was in negotiations with his record company, EMI Australia, and he felt he should ensure that his sexuality was not wrapped in mystery as his career progressed. He is aware of how difficult this is, yet he underscores how being supported could really make a difference. Troye acknowledges he is "lucky" in ways he may not have been if he had grown up somewhere where being gay was not so accepted. This was a personal milestone for him in that he publicly defined himself in front of his audience. The clarity was not just personal, however, as it provided visibility; people later reported that such videos as his made them feel less alone. For Troye's career, it meant he no longer had to keep a piece of himself secret—an individuality that most likely defined his music, public image, and fan interaction.</p>
       </div>
     </div>
 
     <div class="story-divider"></div>
-
   </section>
 
   <!-- ================= RIGHTS & OPPORTUNITIES ================= -->
-  <section class="rights-opportunities">
-    <h2>RIGHTS & OPPORTUNITIES</h2>
+  <section id="rights" class="rights-section">
+    <h2>Rights & Opportunities</h2>
 
-    <!-- ===== Rights Table ===== -->
     <table class="rights-table">
       <thead>
         <tr>
@@ -124,65 +197,30 @@
         </tr>
       </thead>
       <tbody>
-        <tr class="women">
-          <td>
-            <a href="https://oxfam.org.ph/story-grant-inequality-in-the-philippines/" target="_blank">
-              Women’s Rights in the Philippines
-            </a>
-          </td>
-          <td>
-            Women have the right to education, equal pay, and protection from violence. However, enforcement of laws is weak, 
-            and social norms still limit women’s roles. More support is needed in farming, business, leadership, 
-            and the passage of stronger anti-discrimination laws.
-          </td>
+        <tr>
+          <td><a href="https://oxfam.org.ph/story-grant-inequality-in-the-philippines/" target="_blank">Women’s Rights in the Philippines</a></td>
+          <td>Women have the right to education, equal pay, and protection from violence. However, laws are not always enforced, and cultural norms continue to restrict opportunities.</td>
         </tr>
-        <tr class="lgbtq">
-          <td>
-            <a href="https://time.com/6290762/philippines-pride-lgbt-discrimination-sogie-equality-bill/" target="_blank">
-              LGBTQ+ Discrimination
-            </a>
-          </td>
-          <td>
-            Despite being seen as LGBT-friendly, the Philippines lacks national legal protection. LGBTQ+ Filipinos remain vulnerable 
-            to discrimination in work, school, and daily life.
-          </td>
+        <tr>
+          <td><a href="https://time.com/6290762/philippines-pride-lgbt-discrimination-sogie-equality-bill/" target="_blank">LGBTQ+ Discrimination</a></td>
+          <td>LGBTQ+ individuals in the Philippines still face discrimination in employment, schools, and daily life, with few legal protections.</td>
         </tr>
-        <tr class="sogie">
-          <td>
-            <a href="https://news.tv5.com.ph/national/read/group-renews-call-for-passage-of-decades-delayed-sogie-bill" target="_blank">
-              SOGIE Equality Bill
-            </a>
-          </td>
-          <td>
-            The bill seeks to ban discrimination based on sexual orientation, gender identity, expression, and sex characteristics. 
-            It has stalled in Congress for over 20 years despite strong advocacy from groups like Bahaghari and CHR.
-          </td>
+        <tr>
+          <td><a href="https://news.tv5.com.ph/national/read/group-renews-call-for-passage-of-decades-delayed-sogie-bill" target="_blank">SOGIE Equality Bill</a></td>
+          <td>A long-delayed bill that would protect against discrimination based on gender identity and sexual orientation.</td>
         </tr>
-        <tr class="advocacy">
-          <td>
-            <a href="https://www.them.us/story/first-filipina-boxing-winner-olympics-dedicates-medal-lgbtq-community-nesthy-petecio" target="_blank">
-              LGBTQ+ Advocacy Movements
-            </a>
-          </td>
-          <td>
-            Groups like Bahaghari organize Pride marches, support victims of red-tagging and violence, 
-            and campaign for the passage of the SOGIE Bill. Events like “Stonewall Philippines” highlight ongoing struggles for equality.
-          </td>
+        <tr>
+          <td><a href="https://www.them.us/story/first-filipina-boxing-winner-olympics-dedicates-medal-lgbtq-community-nesthy-petecio" target="_blank">LGBTQ+ Advocacy Movements</a></td>
+          <td>Pride marches and advocacy campaigns continue to raise awareness and push for equal rights across the Philippines.</td>
         </tr>
       </tbody>
     </table>
 
-    <!-- ===== Rights Note ===== -->
     <div class="rights-note">
       <p>
-        Beyond rights and opportunities, gender expectations continue to harm both women and men. 
-        Patriarchal norms place men above women, leading to pay inequities, violence, and discriminatory policies. 
-        These norms also pressure men and boys to conform to restrictive ideas of masculinity, often causing emotional stress, 
-        poor health outcomes, and higher risks of suicide. Breaking these harmful expectations benefits everyone, 
-        creating a society where people can freely express themselves without fear or limitation.
+        Beyond rights and opportunities, gender expectations continue to harm both women and men. Patriarchal norms place men above women, leading to pay inequities, violence, and discriminatory policies. These norms also pressure men and boys to conform to restrictive ideas of masculinity, often causing emotional stress, poor health outcomes, and higher risks of suicide. Breaking these harmful expectations benefits everyone, creating a society where people can freely express themselves without fear or limitation.
       </p>
     </div>
-
   </section>
 
   <!-- ================= FOOTER ================= -->
