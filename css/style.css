@@ -104,6 +104,10 @@ section,
   display: none;
 }
 
+.hamburger {
+  display: none;
+}
+
 .top-bar {
   position: fixed;
   top: 0;
